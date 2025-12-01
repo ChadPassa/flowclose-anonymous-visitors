@@ -1,7 +1,7 @@
 // FlowClose Main JavaScript - 2025-11-07
 
 // ========== CALENDAR MODAL ==========
-function openCalendar() {
+function openCalendarModal() {
     const modal = document.getElementById('calendar-modal');
     if (modal) {
         modal.classList.add('show');
@@ -9,7 +9,7 @@ function openCalendar() {
     }
 }
 
-function closeCalendar() {
+function closeCalendarModal() {
     const modal = document.getElementById('calendar-modal');
     if (modal) {
         modal.classList.remove('show');
@@ -20,7 +20,7 @@ function closeCalendar() {
 // Close modal on escape key
 document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
-        closeCalendar();
+        closeCalendarModal();
     }
 });
 
@@ -28,7 +28,7 @@ document.addEventListener('keydown', function(e) {
 document.addEventListener('click', function(e) {
     const modal = document.getElementById('calendar-modal');
     if (e.target === modal) {
-        closeCalendar();
+        closeCalendarModal();
     }
 });
 
@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.btn-calendar').forEach(btn => {
         btn.addEventListener('click', function(e) {
             e.preventDefault();
-            openCalendar();
+            openCalendarModal();
         });
     });
     
