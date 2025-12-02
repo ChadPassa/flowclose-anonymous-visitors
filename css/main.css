@@ -73,6 +73,7 @@ nav {
     width: auto;
     vertical-align: middle;
     margin-right: -0.3rem;
+    background: transparent;
 }
 
 .nav-links {
